@@ -1,321 +1,476 @@
-import Node from './node';
+import Node from "./node";
+
 export default {
-  nodes: [{
-    id: '0',
-    label: '0',
-    Class: Node
-  }, {
-    id: '1',
-    label: '1',
-    Class: Node
-  }, {
-    id: '2',
-    label: '2',
-    Class: Node
-  }, {
-    id: '3',
-    label: '3',
-    Class: Node
-  }, {
-    id: '4',
-    label: '4',
-    Class: Node
-  }, {
-    id: '5',
-    label: '5',
-    Class: Node
-  }, {
-    id: '6',
-    label: '6',
-    Class: Node
-  }, {
-    id: '7',
-    label: '7',
-    Class: Node
-  }, {
-    id: '8',
-    label: '8',
-    Class: Node
-  }, {
-    id: '9',
-    label: '9',
-    Class: Node
-  }, {
-    id: '10',
-    label: '10',
-    Class: Node
-  }, {
-    id: '11',
-    label: '11',
-    Class: Node
-  }, {
-    id: '12',
-    label: '12',
-    Class: Node
-  }, {
-    id: '13',
-    label: '13',
-    Class: Node
-  }, {
-    id: '14',
-    label: '14',
-    Class: Node
-  }, {
-    id: '15',
-    label: '15',
-    Class: Node
-  }, {
-    id: '16',
-    label: '16',
-    Class: Node
-  }, {
-    id: '17',
-    label: '17',
-    Class: Node
-  }, {
-    id: '18',
-    label: '18',
-    Class: Node
-  }, {
-    id: '19',
-    label: '19',
-    Class: Node
-  }, {
-    id: '20',
-    label: '20',
-    Class: Node
-  }, {
-    id: '21',
-    label: '21',
-    Class: Node
-  }, {
-    id: '22',
-    label: '22',
-    Class: Node
-  }, {
-    id: '23',
-    label: '23',
-    Class: Node
-  }, {
-    id: '24',
-    label: '24',
-    Class: Node
-  }, {
-    id: '25',
-    label: '25',
-    Class: Node
-  }, {
-    id: '26',
-    label: '26',
-    Class: Node
-  }, {
-    id: '27',
-    label: '27',
-    Class: Node
-  }, {
-    id: '28',
-    label: '28',
-    Class: Node
-  }, {
-    id: '29',
-    label: '29',
-    Class: Node
-  }, {
-    id: '30',
-    label: '30',
-    Class: Node
-  }, {
-    id: '31',
-    label: '31',
-    Class: Node
-  }, {
-    id: '32',
-    label: '32',
-    Class: Node
-  }, {
-    id: '33',
-    label: '33',
-    Class: Node
-  }],
-  edges: [{
-    source: '0',
-    target: '1'
-  }, {
-    source: '0',
-    target: '2'
-  }, {
-    source: '0',
-    target: '3'
-  }, {
-    source: '0',
-    target: '4'
-  }, {
-    source: '0',
-    target: '5'
-  }, {
-    source: '0',
-    target: '7'
-  }, {
-    source: '0',
-    target: '8'
-  }, {
-    source: '0',
-    target: '9'
-  }, {
-    source: '0',
-    target: '10'
-  }, {
-    source: '0',
-    target: '11'
-  }, {
-    source: '0',
-    target: '13'
-  }, {
-    source: '0',
-    target: '14'
-  }, {
-    source: '0',
-    target: '15'
-  }, {
-    source: '0',
-    target: '16'
-  }, {
-    source: '2',
-    target: '3'
-  }, {
-    source: '4',
-    target: '5'
-  }, {
-    source: '4',
-    target: '6'
-  }, {
-    source: '5',
-    target: '6'
-  }, {
-    source: '7',
-    target: '13'
-  }, {
-    source: '8',
-    target: '14'
-  }, {
-    source: '9',
-    target: '10'
-  }, {
-    source: '10',
-    target: '22'
-  }, {
-    source: '10',
-    target: '14'
-  }, {
-    source: '10',
-    target: '12'
-  }, {
-    source: '10',
-    target: '24'
-  }, {
-    source: '10',
-    target: '21'
-  }, {
-    source: '10',
-    target: '20'
-  }, {
-    source: '11',
-    target: '24'
-  }, {
-    source: '11',
-    target: '22'
-  }, {
-    source: '11',
-    target: '14'
-  }, {
-    source: '12',
-    target: '13'
-  }, {
-    source: '16',
-    target: '17'
-  }, {
-    source: '16',
-    target: '18'
-  }, {
-    source: '16',
-    target: '21'
-  }, {
-    source: '16',
-    target: '22'
-  }, {
-    source: '17',
-    target: '18'
-  }, {
-    source: '17',
-    target: '20'
-  }, {
-    source: '18',
-    target: '19'
-  }, {
-    source: '19',
-    target: '20'
-  }, {
-    source: '19',
-    target: '33'
-  }, {
-    source: '19',
-    target: '22'
-  }, {
-    source: '19',
-    target: '23'
-  }, {
-    source: '20',
-    target: '21'
-  }, {
-    source: '21',
-    target: '22'
-  }, {
-    source: '22',
-    target: '24'
-  }, {
-    source: '22',
-    target: '25'
-  }, {
-    source: '22',
-    target: '26'
-  }, {
-    source: '22',
-    target: '23'
-  }, {
-    source: '22',
-    target: '28'
-  }, {
-    source: '22',
-    target: '30'
-  }, {
-    source: '22',
-    target: '31'
-  }, {
-    source: '22',
-    target: '32'
-  }, {
-    source: '22',
-    target: '33'
-  }, {
-    source: '23',
-    target: '28'
-  }, {
-    source: '23',
-    target: '27'
-  }, {
-    source: '23',
-    target: '29'
-  }, {
-    source: '23',
-    target: '30'
-  }, {
-    source: '23',
-    target: '31'
-  }, {
-    source: '23',
-    target: '33'
-  }, {
-    source: '32',
-    target: '33'
-  }]
+  nodes: [
+    { id: "存储营销设备", label: "存储营销设备", cluster: "a", Class: Node },
+    { id: "核心业务设施", label: "核心业务设施", cluster: "a", Class: Node },
+    { id: "综合指标设施", label: "综合指标设施", cluster: "a", Class: Node },
+    {
+      id: "企业级客户信息设施",
+      label: "企业级客户信息设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "移动发卡管理设施",
+      label: "移动发卡管理设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "企业服务总线设施",
+      label: "企业服务总线设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "统一付出设备", label: "统一付出设备", cluster: "a", Class: Node },
+    {
+      id: "贷后风险监测与预警设施",
+      label: "贷后风险监测与预警设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "融合通信设备", label: "融合通信设备", cluster: "a", Class: Node },
+    { id: "超级网络", label: "超级网络", cluster: "a", Class: Node },
+    {
+      id: "公务卡行内前置设施",
+      label: "公务卡行内前置设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "App", label: "App", cluster: "a", Class: Node },
+    { id: "自助智能设备", label: "自助智能设备", cluster: "a", Class: Node },
+    { id: "中间业务设备", label: "中间业务设备", cluster: "a", Class: Node },
+    {
+      id: "财税库银前置设施",
+      label: "财税库银前置设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "数字化设施", label: "数字化设施", cluster: "a", Class: Node },
+    { id: "综合前置设施", label: "综合前置设施", cluster: "a", Class: Node },
+    {
+      id: "母子账户管理设施",
+      label: "母子账户管理设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "公务卡银联数据前置设施",
+      label: "公务卡银联数据前置设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "信贷管理设施", label: "信贷管理设施", cluster: "a", Class: Node },
+    { id: "查控设备", label: "查控设备", cluster: "a", Class: Node },
+    { id: "综合代销设施", label: "综合代销设施", cluster: "a", Class: Node },
+    {
+      id: "四川银政通信息服务设备",
+      label: "四川银政通信息服务设备",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "函证管理设施", label: "函证管理设施", cluster: "a", Class: Node },
+    {
+      id: "信贷客户信息管理设施",
+      label: "信贷客户信息管理设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "押品管理设施", label: "押品管理设施", cluster: "a", Class: Node },
+    { id: "数字银行设施", label: "数字银行设施", cluster: "a", Class: Node },
+    { id: "核心设施", label: "核心设施", cluster: "a", Class: Node },
+    { id: "消息推送设备", label: "消息推送设备", cluster: "a", Class: Node },
+    {
+      id: "便捷助农终端设施",
+      label: "便捷助农终端设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "青鸟消息设备", label: "青鸟消息设备", cluster: "a", Class: Node },
+    { id: "联网核查设施", label: "联网核查设施", cluster: "a", Class: Node },
+    { id: "金融IC卡设施", label: "金融IC卡设施", cluster: "a", Class: Node },
+    { id: "智能排队设施", label: "智能排队设施", cluster: "a", Class: Node },
+    { id: "积分设施", label: "积分设施", cluster: "a", Class: Node },
+    {
+      id: "理财发行管理设施",
+      label: "理财发行管理设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "IC卡设施", label: "IC卡设施", cluster: "a", Class: Node },
+    { id: "智能存储V2", label: "智能存储V2", cluster: "a", Class: Node },
+    { id: "场景营销设备", label: "场景营销设备", cluster: "a", Class: Node },
+    { id: "网联付出设施", label: "网联付出设施", cluster: "a", Class: Node },
+    {
+      id: "个人身份证联网核查设施",
+      label: "个人身份证联网核查设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "企业账户管理设施",
+      label: "企业账户管理设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "人脸识别设施", label: "人脸识别设施", cluster: "a", Class: Node },
+    { id: "企业网络", label: "企业网络", cluster: "a", Class: Node },
+    {
+      id: "IFRS9估值与减值设施",
+      label: "IFRS9估值与减值设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "国内信用证设施",
+      label: "国内信用证设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "积分权益营销设备",
+      label: "积分权益营销设备",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "社保激活APP", label: "社保激活APP", cluster: "a", Class: Node },
+    {
+      id: "财政代收代付业务设施",
+      label: "财政代收代付业务设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "宜农POS设备", label: "宜农POS设备", cluster: "a", Class: Node },
+    { id: "SGB设施", label: "SGB设施", cluster: "a", Class: Node },
+    { id: "预算一体化", label: "预算一体化", cluster: "a", Class: Node },
+    {
+      id: "刷脸付前置设施",
+      label: "刷脸付前置设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "统一集中账户管理设施",
+      label: "统一集中账户管理设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "中间业务设备V2",
+      label: "中间业务设备V2",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "银联二维码扫码付出前置设施",
+      label: "银联二维码扫码付出前置设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "财务管理设施", label: "财务管理设施", cluster: "a", Class: Node },
+    { id: "理财销售设施", label: "理财销售设施", cluster: "a", Class: Node },
+    {
+      id: "线上存储统计设备",
+      label: "线上存储统计设备",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "电子验印设施", label: "电子验印设施", cluster: "a", Class: Node },
+    {
+      id: "代客资产管理设施",
+      label: "代客资产管理设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "理财资产管理设施",
+      label: "理财资产管理设施",
+      cluster: "a",
+      Class: Node,
+    },
+    {
+      id: "新资金业务管理设施",
+      label: "新资金业务管理设施",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "银企对账设施", label: "银企对账设施", cluster: "a", Class: Node },
+    { id: "集中授权设施", label: "集中授权设施", cluster: "a", Class: Node },
+    { id: "事后监督设施", label: "事后监督设施", cluster: "a", Class: Node },
+    {
+      id: "四川银联行业代付设备前置",
+      label: "四川银联行业代付设备前置",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "网联前置", label: "网联前置", cluster: "a", Class: Node },
+    { id: "新OA办公设施", label: "新OA办公设施", cluster: "a", Class: Node },
+    {
+      id: "四川政府债券前置",
+      label: "四川政府债券前置",
+      cluster: "a",
+      Class: Node,
+    },
+    { id: "礼品派发设施", label: "礼品派发设施", cluster: "a", Class: Node },
+  ],
+  edges: [
+    { source: "存储营销设备", target: "核心业务设施" },
+    { source: "综合指标设施", target: "企业级客户信息设施" },
+    { source: "移动发卡管理设施", target: "企业服务总线设施" },
+    { source: "综合指标设施", target: "统一付出设备" },
+    { source: "贷后风险监测与预警设施", target: "融合通信设备" },
+    { source: "超级网络", target: "融合通信设备" },
+    { source: "综合指标设施", target: "公务卡行内前置设施" },
+    { source: "App", target: "公务卡行内前置设施" },
+    { source: "综合指标设施", target: "核心业务设施" },
+    { source: "自助智能设备", target: "核心业务设施" },
+    { source: "综合指标设施", target: "中间业务设备" },
+    { source: "自助智能设备", target: "融合通信设备" },
+    { source: "财税库银前置设施", target: "数字化设施" },
+    { source: "综合前置设施", target: "企业级客户信息设施" },
+    { source: "综合前置设施", target: "核心业务设施" },
+    { source: "App", target: "数字化设施" },
+    { source: "App", target: "存储营销设备" },
+    { source: "App", target: "统一付出设备" },
+    { source: "中间业务设备", target: "母子账户管理设施" },
+    { source: "App", target: "公务卡银联数据前置设施" },
+    { source: "信贷管理设施", target: "融合通信设备" },
+    { source: "查控设备", target: "综合代销设施" },
+    { source: "综合指标设施", target: "存储营销设备" },
+    { source: "统一付出设备", target: "四川银政通信息服务设备" },
+    { source: "App", target: "核心业务设施" },
+    { source: "函证管理设施", target: "融合通信设备" },
+    { source: "中间业务设备", target: "信贷管理设施" },
+    { source: "App", target: "企业级客户信息设施" },
+    { source: "信贷客户信息管理设施", target: "企业级客户信息设施" },
+    { source: "综合代销设施", target: "融合通信设备" },
+    { source: "押品管理设施", target: "核心业务设施" },
+    { source: "信贷管理设施", target: "押品管理设施" },
+    { source: "App", target: "综合指标设施" },
+    { source: "综合前置设施", target: "综合指标设施" },
+    { source: "数字银行设施", target: "数字化设施" },
+    { source: "综合指标设施", target: "核心设施" },
+    { source: "函证管理设施", target: "核心业务设施" },
+    { source: "函证管理设施", target: "消息推送设备" },
+    { source: "存储营销设备", target: "融合通信设备" },
+    { source: "便捷助农终端设施", target: "核心业务设施" },
+    { source: "便捷助农终端设施", target: "青鸟消息设备" },
+    { source: "便捷助农终端设施", target: "联网核查设施" },
+    { source: "便捷助农终端设施", target: "企业级客户信息设施" },
+    { source: "便捷助农终端设施", target: "金融IC卡设施" },
+    { source: "便捷助农终端设施", target: "统一付出设备" },
+    { source: "智能排队设施", target: "企业级客户信息设施" },
+    { source: "智能排队设施", target: "核心设施" },
+    { source: "企业级客户信息设施", target: "核心设施" },
+    { source: "积分设施", target: "融合通信设备" },
+    { source: "自助智能设备", target: "综合代销设施" },
+    { source: "App", target: "融合通信设备" },
+    { source: "理财发行管理设施", target: "融合通信设备" },
+    { source: "App", target: "综合代销设施" },
+    { source: "综合指标设施", target: "财税库银前置设施" },
+    { source: "综合指标设施", target: "IC卡设施" },
+    { source: "综合指标设施", target: "青鸟消息设备" },
+    { source: "综合指标设施", target: "智能存储V2" },
+    { source: "综合指标设施", target: "数字化设施" },
+    { source: "综合指标设施", target: "企业服务总线设施" },
+    { source: "场景营销设备", target: "企业级客户信息设施" },
+    { source: "网联付出设施", target: "核心业务设施" },
+    { source: "网联付出设施", target: "公务卡银联数据前置设施" },
+    { source: "网联付出设施", target: "企业级客户信息设施" },
+    { source: "网联付出设施", target: "融合通信设备" },
+    { source: "综合指标设施", target: "个人身份证联网核查设施" },
+    { source: "App", target: "智能排队设施" },
+    { source: "积分设施", target: "企业级客户信息设施" },
+    { source: "App", target: "信贷管理设施" },
+    { source: "自助智能设备", target: "企业级客户信息设施" },
+    { source: "自助智能设备", target: "IC卡设施" },
+    { source: "自助智能设备", target: "核心设施" },
+    { source: "自助智能设备", target: "个人身份证联网核查设施" },
+    { source: "自助智能设备", target: "青鸟消息设备" },
+    { source: "自助智能设备", target: "智能排队设施" },
+    { source: "App", target: "中间业务设备" },
+    { source: "企业账户管理设施", target: "综合指标设施" },
+    { source: "企业账户管理设施", target: "核心业务设施" },
+    { source: "移动发卡管理设施", target: "企业级客户信息设施" },
+    { source: "移动发卡管理设施", target: "联网核查设施" },
+    { source: "移动发卡管理设施", target: "融合通信设备" },
+    { source: "移动发卡管理设施", target: "核心业务设施" },
+    { source: "移动发卡管理设施", target: "金融IC卡设施" },
+    { source: "移动发卡管理设施", target: "人脸识别设施" },
+    { source: "综合指标设施", target: "企业网络" },
+    { source: "核心业务设施", target: "融合通信设备" },
+    { source: "数字化设施", target: "核心业务设施" },
+    { source: "押品管理设施", target: "企业级客户信息设施" },
+    { source: "押品管理设施", target: "信贷管理设施" },
+    { source: "押品管理设施", target: "融合通信设备" },
+    { source: "母子账户管理设施", target: "超级网络" },
+    { source: "自助智能设备", target: "存储营销设备" },
+    { source: "IFRS9估值与减值设施", target: "核心业务设施" },
+    { source: "企业账户管理设施", target: "联网核查设施" },
+    { source: "自助智能设备", target: "企业服务总线设施" },
+    { source: "国内信用证设施", target: "核心业务设施" },
+    { source: "四川银政通信息服务设备", target: "统一付出设备" },
+    { source: "中间业务设备", target: "融合通信设备" },
+    { source: "综合代销设施", target: "企业级客户信息设施" },
+    { source: "统一付出设备", target: "网联付出设施" },
+    { source: "国内信用证设施", target: "企业级客户信息设施" },
+    { source: "超级网络", target: "核心业务设施" },
+    { source: "积分权益营销设备", target: "青鸟消息设备" },
+    { source: "综合指标设施", target: "公务卡银联数据前置设施" },
+    { source: "统一付出设备", target: "融合通信设备" },
+    { source: "社保激活APP", target: "企业级客户信息设施" },
+    { source: "App", target: "智能存储V2" },
+    { source: "网联付出设施", target: "统一付出设备" },
+    { source: "四川银政通信息服务设备", target: "核心业务设施" },
+    { source: "综合指标设施", target: "金融IC卡设施" },
+    { source: "综合指标设施", target: "母子账户管理设施" },
+    { source: "财政代收代付业务设施", target: "核心业务设施" },
+    { source: "统一付出设备", target: "核心业务设施" },
+    { source: "统一付出设备", target: "消息推送设备" },
+    { source: "宜农POS设备", target: "智能存储V2" },
+    { source: "财政代收代付业务设施", target: "统一付出设备" },
+    { source: "宜农POS设备", target: "金融IC卡设施" },
+    { source: "宜农POS设备", target: "核心业务设施" },
+    { source: "积分设施", target: "核心业务设施" },
+    { source: "积分设施", target: "消息推送设备" },
+    { source: "查控设备", target: "统一付出设备" },
+    { source: "综合指标设施", target: "融合通信设备" },
+    { source: "SGB设施", target: "数字化设施" },
+    { source: "预算一体化", target: "母子账户管理设施" },
+    { source: "刷脸付前置设施", target: "核心业务设施" },
+    { source: "存储营销设备", target: "企业级客户信息设施" },
+    { source: "存储营销设备", target: "消息推送设备" },
+    { source: "企业账户管理设施", target: "统一集中账户管理设施" },
+    { source: "智能排队设施", target: "核心业务设施" },
+    { source: "企业级客户信息设施", target: "核心业务设施" },
+    { source: "联网核查设施", target: "综合指标设施" },
+    { source: "中间业务设备V2", target: "核心业务设施" },
+    { source: "企业账户管理设施", target: "企业级客户信息设施" },
+    { source: "银联二维码扫码付出前置设施", target: "核心业务设施" },
+    { source: "综合指标设施", target: "联网核查设施" },
+    { source: "综合指标设施", target: "预算一体化" },
+    { source: "预算一体化", target: "企业网络" },
+    { source: "统一付出设备", target: "母子账户管理设施" },
+    { source: "数字银行设施", target: "母子账户管理设施" },
+    { source: "财务管理设施", target: "核心业务设施" },
+    { source: "场景营销设备", target: "融合通信设备" },
+    { source: "母子账户管理设施", target: "核心业务设施" },
+    { source: "综合代销设施", target: "自助智能设备" },
+    { source: "自助智能设备", target: "金融IC卡设施" },
+    { source: "中间业务设备", target: "联网核查设施" },
+    { source: "中间业务设备", target: "核心业务设施" },
+    { source: "综合代销设施", target: "核心业务设施" },
+    { source: "综合指标设施", target: "App" },
+    { source: "中间业务设备", target: "统一付出设备" },
+    { source: "数字银行设施", target: "统一付出设备" },
+    { source: "数字银行设施", target: "超级网络" },
+    { source: "App", target: "青鸟消息设备" },
+    { source: "超级网络", target: "青鸟消息设备" },
+    { source: "便捷助农终端设施", target: "企业服务总线设施" },
+    { source: "便捷助农终端设施", target: "人脸识别设施" },
+    { source: "自助智能设备", target: "理财销售设施" },
+    { source: "综合指标设施", target: "综合代销设施" },
+    { source: "综合代销设施", target: "统一付出设备" },
+    { source: "线上存储统计设备", target: "消息推送设备" },
+    { source: "统一付出设备", target: "公务卡银联数据前置设施" },
+    { source: "自助智能设备", target: "人脸识别设施" },
+    { source: "国内信用证设施", target: "信贷管理设施" },
+    { source: "数字化设施", target: "融合通信设备" },
+    { source: "数字银行设施", target: "函证管理设施" },
+    { source: "核心业务设施", target: "企业级客户信息设施" },
+    { source: "App", target: "超级网络" },
+    { source: "企业账户管理设施", target: "个人身份证联网核查设施" },
+    { source: "企业账户管理设施", target: "人脸识别设施" },
+    { source: "四川银政通信息服务设备", target: "金融IC卡设施" },
+    { source: "查控设备", target: "企业级客户信息设施" },
+    { source: "电子验印设施", target: "核心业务设施" },
+    { source: "代客资产管理设施", target: "统一付出设备" },
+    { source: "综合指标设施", target: "人脸识别设施" },
+    { source: "企业级客户信息设施", target: "融合通信设备" },
+    { source: "理财资产管理设施", target: "融合通信设备" },
+    { source: "超级网络", target: "公务卡行内前置设施" },
+    { source: "超级网络", target: "公务卡银联数据前置设施" },
+    { source: "App", target: "刷脸付前置设施" },
+    { source: "App", target: "财政代收代付业务设施" },
+    { source: "App", target: "人脸识别设施" },
+    { source: "刷脸付前置设施", target: "统一付出设备" },
+    { source: "App", target: "个人身份证联网核查设施" },
+    { source: "统一付出设备", target: "超级网络" },
+    { source: "存储营销设备", target: "自助智能设备" },
+    { source: "财政代收代付业务设施", target: "企业网络" },
+    { source: "综合指标设施", target: "财政代收代付业务设施" },
+    { source: "预算一体化", target: "综合指标设施" },
+    { source: "统一付出设备", target: "公务卡行内前置设施" },
+    { source: "自助智能设备", target: "公务卡银联数据前置设施" },
+    { source: "综合前置设施", target: "自助智能设备" },
+    { source: "存储营销设备", target: "综合指标设施" },
+    { source: "综合代销设施", target: "消息推送设备" },
+    { source: "宜农POS设备", target: "存储营销设备" },
+    { source: "自助智能设备", target: "统一付出设备" },
+    { source: "母子账户管理设施", target: "统一付出设备" },
+    { source: "母子账户管理设施", target: "青鸟消息设备" },
+    { source: "财政代收代付业务设施", target: "综合指标设施" },
+    { source: "数字银行设施", target: "财政代收代付业务设施" },
+    { source: "自助智能设备", target: "联网核查设施" },
+    { source: "预算一体化", target: "统一付出设备" },
+    { source: "超级网络", target: "统一付出设备" },
+    { source: "财务管理设施", target: "消息推送设备" },
+    { source: "数字化设施", target: "企业级客户信息设施" },
+    { source: "新资金业务管理设施", target: "核心业务设施" },
+    { source: "企业级客户信息设施", target: "综合指标设施" },
+    { source: "便捷助农终端设施", target: "融合通信设备" },
+    { source: "数字银行设施", target: "银企对账设施" },
+    { source: "App", target: "网联付出设施" },
+    { source: "场景营销设备", target: "核心业务设施" },
+    { source: "SGB设施", target: "企业级客户信息设施" },
+    { source: "集中授权设施", target: "综合指标设施" },
+    { source: "综合指标设施", target: "集中授权设施" },
+    { source: "银企对账设施", target: "核心业务设施" },
+    { source: "企业账户管理设施", target: "集中授权设施" },
+    { source: "新资金业务管理设施", target: "统一付出设备" },
+    { source: "App", target: "消息推送设备" },
+    { source: "公务卡行内前置设施", target: "核心业务设施" },
+    { source: "中间业务设备", target: "消息推送设备" },
+    { source: "企业账户管理设施", target: "银企对账设施" },
+    { source: "理财销售设施", target: "统一付出设备" },
+    { source: "企业级客户信息设施", target: "自助智能设备" },
+    { source: "综合代销设施", target: "综合指标设施" },
+    { source: "场景营销设备", target: "消息推送设备" },
+    { source: "智能排队设施", target: "App" },
+    { source: "财务管理设施", target: "融合通信设备" },
+    { source: "场景营销设备", target: "统一付出设备" },
+    { source: "中间业务设备", target: "自助智能设备" },
+    { source: "中间业务设备", target: "综合指标设施" },
+    { source: "新资金业务管理设施", target: "企业级客户信息设施" },
+    { source: "预算一体化", target: "核心业务设施" },
+    { source: "App", target: "联网核查设施" },
+    { source: "事后监督设施", target: "综合指标设施" },
+    { source: "App", target: "理财销售设施" },
+    { source: "综合代销设施", target: "理财销售设施" },
+    { source: "集中授权设施", target: "核心业务设施" },
+    { source: "综合指标设施", target: "超级网络" },
+    { source: "统一付出设备", target: "预算一体化" },
+    { source: "数字化设施", target: "统一付出设备" },
+    { source: "数字银行设施", target: "企业级客户信息设施" },
+    { source: "统一付出设备", target: "数字化设施" },
+    { source: "预算一体化", target: "消息推送设备" },
+    { source: "财税库银前置设施", target: "统一付出设备" },
+    { source: "企业账户管理设施", target: "母子账户管理设施" },
+    { source: "母子账户管理设施", target: "消息推送设备" },
+    { source: "超级网络", target: "母子账户管理设施" },
+    { source: "银企对账设施", target: "电子验印设施" },
+    { source: "四川银联行业代付设备前置", target: "核心业务设施" },
+    { source: "综合指标设施", target: "电子验印设施" },
+    { source: "App", target: "网联前置" },
+    { source: "IFRS9估值与减值设施", target: "消息推送设备" },
+    { source: "四川银政通信息服务设备", target: "信贷管理设施" },
+    { source: "统一付出设备", target: "中间业务设备" },
+    { source: "数字化设施", target: "消息推送设备" },
+    { source: "数字化设施", target: "青鸟消息设备" },
+    { source: "新OA办公设施", target: "青鸟消息设备" },
+    { source: "App", target: "企业服务总线设施" },
+    { source: "四川政府债券前置", target: "消息推送设备" },
+    { source: "礼品派发设施", target: "消息推送设备" },
+  ],
 };

@@ -47,7 +47,9 @@ class Grid extends Component {
       },
       theme: {
         edge: {
-          shapeType: 'Straight'
+          shapeType: 'Straight',
+          arrow: true,
+          arrowPosition: 0.8,
         }
       }
     });

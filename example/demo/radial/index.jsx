@@ -23,29 +23,29 @@ class Radial extends Component {
         type: 'radial',
         options: {
           // 布局画布总宽度
-          width: 800,
+          width: 1000,
           // 布局画布总长度
-          height: 800,
+          height: 1000,
           /** 停止迭代的最大迭代数 */
           maxIteration: 200,
           /** 布局中心 */
-          center: [400, 400],
+          center: [500, 500],
           /** 中心点，默认为数据中第一个点 */
           focusNode: '0',
           /** 每一圈半径 */
-          unitRadius: 80,
+          unitRadius: 250,
           /** 默认边长度 */
           linkDistance: 100,
           /** 是否防止重叠 */
           preventOverlap: true,
           /** 节点直径 */
-          nodeSize: 20,
+          nodeSize: 250,
           /** 节点间距，防止节点重叠时节点之间的最小距离（两节点边缘最短距离） */
-          nodeSpacing: undefined,
+          nodeSpacing: 50,
           /** 是否必须是严格的 radial 布局，即每一层的节点严格布局在一个环上。preventOverlap 为 true 时生效 */
           strictRadial: true,
           /** 防止重叠步骤的最大迭代次数 */
-          maxPreventOverlapIteration: 200,
+          maxPreventOverlapIteration: 300,
           link: {
             // 线条的距离
             distance: 10,

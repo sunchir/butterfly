@@ -20,21 +20,21 @@ class Fruchterman extends Component {
         type: 'fruchterman',
         options: {
           // 布局画布总宽度
-          width: 500,
+          width: 1500,
           // 布局画布总长度
-          height: 500,
+          height: 1500,
           /** 停止迭代的最大迭代数 */
           // maxIteration: 1000,
           /** 布局中心 */
-          center: [250, 250],
+          center: [550, 550],
           /** 重力大小，影响图的紧凑程度 */
-          gravity: 5,
+          gravity: 1,
           /** 速度 */
           speed: 5,
           /** 是否产生聚类力 */
           clustering: true,
           /** 聚类力大小 */
-          clusterGravity: 8,
+          clusterGravity: 1,
           link: {
             // 线条的距离
             distance: 50,
